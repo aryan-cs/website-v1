@@ -24,7 +24,7 @@ function Project (props) {
 
       </div>
 
-      <BsGithub onClick = {()=> { window.open(props.repo, "_blank") }}/>
+      <BsGithub onClick = {()=> { window.open(props.repo, "_blank") }} className = "Project-link"/>
 
     </div>
 

@@ -37,19 +37,19 @@ function Board (props) {
 
                     </button>
 
-                    <button onClick = {() => window.open("", '_blank', 'noopener, noreferrer')}
+                    {/* <button onClick = {() => window.open("", '_blank', 'noopener, noreferrer')}
                             className = "Link-Button Fancy-Border"
                             disabled = {true}
                             href = {""}>
 
                             <BsFillEnvelopeFill className = "Link-Icon"/>
 
-                    </button>
+                    </button> */}
 
-                    <button onClick = {() => window.open("", '_blank', 'noopener, noreferrer')}
+                    <button onClick = {() => window.open("https://www.linkedin.com/in/aryan-g", '_blank', 'noopener, noreferrer')}
                             className = "Link-Button Fancy-Border"
-                            disabled = {true}
-                            href = {""}>
+                            disabled = {false}
+                            href = {"https://www.linkedin.com/in/aryan-g"}>
 
                             <BsLinkedin className = "Link-Icon"/>
 

@@ -42,8 +42,8 @@ img {
   transition: 0.5s;
   border-radius: 50%;
   padding: 3.5vh;
-  margin-left: 0.55vh;
-  margin-right: 0.55vh;
+  margin-left: 1.5vh;
+  margin-right: 1.5vh;
   cursor: pointer;
 
 }

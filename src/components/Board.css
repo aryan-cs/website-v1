@@ -187,7 +187,7 @@
   padding: 2vh;
 
   overflow: hidden;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   cursor: context-menu;
 
 }
@@ -206,7 +206,7 @@
 
 .Event:hover {
 
-  scale: 1.05;
+  scale: 1.1;
   cursor: pointer;
 
 }

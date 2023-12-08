@@ -33,7 +33,7 @@ export default class App extends React.Component {
                  <div className = "App" onLoad = {() => {
 
                      document.getElementById("toggle").checked = true;
-                     document.querySelector(":root").addEventListener("wheel", function (e) { document.querySelector(":root").scrollBy(e.deltaY, 0); });
+                     document.querySelector(":root").addEventListener("wheel", function (e) { document.querySelector(":root").scrollBy(e.deltaY / 1, 0); });
 
                  }}>
               
@@ -57,24 +57,23 @@ export default class App extends React.Component {
                                id = "about"
                                text = {<>
                                
-                                   &#8195;Hi there! My name is <span>Aryan</span>, and I'm currently a junior at James B. Conant 
-                                   High school interested in computer science & physics. I'm a self-taught programmer, and I'm
-                                   currently learning <small>C#</small> and <span>C++</span>.
+                                   &#8195;Hi there! My name is <span>Aryan</span>, and I'm currently a senior at James B. Conant 
+                                   High school interested in computer science & physics. I'm a self-taught programmer and an avid engineer.
                                    
                                    <br/><br/>
                                    
-                                   &#8195;I'm interested in <small>AI/ML</small> & <span>computer vision</span>, and their 
-                                   applications in future <small>automative</small> & <span>aeronautical technology</span>.                                   
+                                   &#8195;I'm interested in <small>HCI</small> & <span>AI</span>, and their 
+                                   applications in future <small>integrated systems</small>.                                   
                                    
                                    <br/><br/>
                                    
                                    &#8195;I'm also interested in <small>quantum computing</small>, and its applications in
-                                   <span> cryptography</span> & <small> physics</small>.
+                                   <span> financial modelling</span> & <small> physics</small>.
 
                                    <br/><br/>
 
-                                   &#8195;I'm currently woring on a research project working
-                                   with <span>aerodynamics</span> and <small>flight efficiency</small>!
+                                   {/* &#8195;I'm currently woring on a research project working
+                                   with <span>aerodynamics</span> and <small>flight efficiency</small>! */}
 
                                </>} />
        
@@ -84,35 +83,31 @@ export default class App extends React.Component {
                         
                         <div className = "Horizontal-Set">
               
-                               <Board width = "39vh"
+                               <Board width = "30vh"
                                       height = "32vh"
                                       header = "I'm a..."
                                       text = {<>
                                       
-                                          <small>Cross country </small> & <span>track</span> runner, <br />
-                                          Instructor at Conant's <small>CompSciKids</small>, <br />
-                                          Teacher at <span>Mathnasium</span>, <br />
-                                          <small>3rd degree</small> black belt holder, <br />
-                                          and <span>Math & Science Tutor</span>. <br />
+                                          <span>Research intern</span> at the <small>University of
+                                          Chicago</small>, where I engineered <span>integrated meshes</span> and published my findings in a paper for the <small>CHI '24</small> conference. <br />
+                                          {/* Read about it <span>here</span>. */}
 
                                           </>} />
                         
                                <Board width = "34vh"
                                       height = "32vh"
-                                      header = "I also like..."
+                                      header = "I'm currently..."
                                       text = {<>
 
-                                          working on my <small>cars</small> & <span>planes</span>, <br />
-                                          <small>photography</small>, <span>digital</span> & <small>pixel</small> art, <br />
-                                          & <span>programming</span>!
+                                          researching <small>mealworms</small> for <span>plastic
+                                          decomposition</span>. Right now, I'm creating a dataset
+                                          to <small>train an algorithm</small> to categorize types of <span>plastic</span>. <br />
                                           
-                                          <br />
-
                                           </>} />
        
                         </div>
               
-                        <Board width = "90%"
+                        <Board width = "84vh"
                                height = "40vh"
                                id = "skills"
                                header = "I've worked with..."
@@ -124,16 +119,16 @@ export default class App extends React.Component {
                                           <div className = "Skill"> <SiReact className = "Fancy-Border" /> React </div>
                                           <div className = "Skill"> <SiPython className = "Fancy-Border" /> Python </div>
                                           <div className = "Skill"> <SiJava className = "Fancy-Border" /> Java </div>
-                                          <div className = "Skill"> <TbCSharp className = "Fancy-Border" /> C# </div>
-                                          <div className = "Skill"> <SiCplusplus className = "Fancy-Border" /> C++ </div>
+                                          {/* <div className = "Skill"> <TbCSharp className = "Fancy-Border" /> C# </div> */}
+                                          {/* <div className = "Skill"> <SiCplusplus className = "Fancy-Border" /> C++ </div> */}
                                           <div className = "Skill"> <SiTensorflow className = "Fancy-Border" /> Tensorflow</div>
+                                          <div className = "Skill"> <SiAmazonaws className = "Fancy-Border" /> AWS </div>
                                           
 
                                    </div>
                                    
                                           <div className = "Row">
                                           
-                                          <div className = "Skill"> <SiAmazonaws className = "Fancy-Border" /> AWS </div>
                                           <div className = "Skill"> <SiNodedotjs className = "Fancy-Border" /> Node.js </div>
                                           <div className = "Skill"> <SiFirebase className = "Fancy-Border" /> Firebase </div>
                                           <div className = "Skill"> <DiSqllite className = "Fancy-Border" /> SQLite</div>
@@ -148,33 +143,43 @@ export default class App extends React.Component {
                  </div>
 
                  <div className = "Horizontal-Set"
-                      style = {{ width: "163vh" }}>
+                      style = {{ width: "155vh" }}>
 
                         <div className = "Timeline">
                             
                             <div className = "Line"></div>
 
-                            <div className = "Events">
+                            <div className = "Events"
+                                   style = {{ paddingLeft: "3vh", paddingRight: "2vh" }}>
 
-                                   <div className = "Timeline-Header">Notable Moments</div>
+                                   <div className = "Timeline-Header">Past</div>
 
-                                   <div className = "Event">2015, Started my journey!</div>
-
-                                   <div className = "Event">2020, Made my first AI project</div>
-
-                                   <div className = "Event">2021, Started working on <br />planes & cars</div>
-
-                                   <a href = "https://www.graaphene.com/"
+                                   <a href = "https://github.com/aryan-cs/uno-dos"
                                       target = "_blank"
                                       rel = "noreferrer"
-                                      className = "Event">2021, Intern at<br /><span>Graaphene</span><BiLink /></a>
+                                      className = "Event">Handwritten<br /><span>Digit Detection</span><BiLink /></a>
+
+                                   <a href = "https://github.com/aryan-cs/my-goldberg"
+                                      target = "_blank"
+                                      rel = "noreferrer"
+                                      className = "Event">Physics-based<br /><span>Rube Goldberg Project</span><BiLink /></a>
+
+                                   <a href = "https://github.com/aryan-cs/red-line"
+                                      target = "_blank"
+                                      rel = "noreferrer"
+                                      className = "Event"> App for car guys,<br /><span>Red Line</span><BiLink /></a>
+
+                                   {/* <a href = "https://github.com/aryan-cs/travelling-salesman"
+                                      target = "_blank"
+                                      rel = "noreferrer"
+                                      className = "Event"> Gave a presentation on <br /><span>Quantum Computing</span><BiLink /></a> */}
 
                                    <a href = "https://runforwater5k.org"
                                       target = "_blank"
                                       rel = "noreferrer"
-                                      className = "Event">2022, Co-founded the<br /><span>Run For Water 5K</span><BiLink /></a>
+                                      className = "Event">Co-founded <br /><span>Run For Water</span><BiLink /></a>
 
-                                   <div className = "Event">2022, Conant's XC team<br />qualified for state</div>
+                                   <div className = "Event">Research Intern at the University of Chicago HCI Lab</div>
 
                             </div>
 
@@ -195,11 +200,11 @@ export default class App extends React.Component {
 
                                    <Project width = "30vh"
                                             height = "20vh"
-                                            title = "Uno-Dos"
-                                          //   id = "noSite"
-                                            repo = "https://github.com/aryan-cs/uno-dos"
-                                            src = "https://aryan-cs.github.io/uno-dos/"
-                                            desc = "An interactive handwritten digit detection AI!"/>
+                                            title = "Red Line"
+                                            id = "noSite"
+                                            repo = "https://github.com/aryan-cs/red-line"
+                                            src = ""
+                                            desc = "An app for car guys, by a car guy."/>
 
                                    <Project width = "30vh"
                                             height = "20vh"
@@ -207,7 +212,7 @@ export default class App extends React.Component {
                                           //   id = "noSite"
                                             repo = "https://github.com/aryan-cs/sudoku"
                                             src = "https://aryan-cs.github.io/sudoku/"
-                                            desc = "Entropy-based vs. brute force solving methods for sudoku"/>
+                                            desc = "Entropy-based vs. brute force solving methods for sudoku."/>
 
                             </div>
 
@@ -225,15 +230,15 @@ export default class App extends React.Component {
                                             title = "Maze Pathfinder"
                                             repo = "https://github.com/aryan-cs/maze"
                                             src = "https://aryan-cs.github.io/maze/"
-                                            desc = "A maze generator & depth-first-search solver"/>
+                                            desc = "A maze generator & depth-first-search solver."/>
 
                                    <Project width = "30vh"
                                             height = "20vh"
-                                          //   id = "noSite"
-                                            title = "Rube Goldberg Machine"
-                                            repo = "https://github.com/aryan-cs/my-goldberg"
-                                            src = "https://aryan-cs.github.io/my-goldberg/"
-                                            desc = "A physics-based Rube Goldberg machine using Matter.js!"/>
+                                            id = "noSite"
+                                            title = "Integrated WebGL"
+                                            repo = "https://github.com/aryan-cs/purple-bodies"
+                                            src = "https://aryan-cs.github.io/purple-bodies/"
+                                            desc = "WebGL-based program to render static bodies that move using Linear Interpolation."/>
 
                             </div>
 
@@ -264,7 +269,7 @@ export default class App extends React.Component {
                      
                  </div>
 
-                 <div className = "Horizontal-Set">
+                 {/* <div className = "Horizontal-Set">
 
                      <Board width = "43vh"
                             height = "76vh"
@@ -287,7 +292,7 @@ export default class App extends React.Component {
                             
                             </>}/>   
 
-                 </div>
+                 </div> */}
 
                      
 
