@@ -15,7 +15,9 @@ import {
        SiNodedotjs,
        SiGit,
        SiAmazonaws,
-       SiTensorflow
+       SiTensorflow,
+       SiArduino,
+       SiRaspberrypi 
 
 } from "react-icons/si";
 
@@ -67,8 +69,8 @@ export default class App extends React.Component {
                                    
                                    <br/><br/>
                                    
-                                   &#8195;I'm also interested in <small>quantum computing</small>, and its applications in
-                                   <span> financial modelling</span> & <small> physics</small>.
+                                   &#8195;I'm also interested in <small>quantum computing</small>, and its 
+                                   applications in <span>financial modelling</span> & <small> physics</small>.
 
                                    <br/><br/>
 
@@ -123,13 +125,14 @@ export default class App extends React.Component {
                                           {/* <div className = "Skill"> <SiCplusplus className = "Fancy-Border" /> C++ </div> */}
                                           <div className = "Skill"> <SiTensorflow className = "Fancy-Border" /> Tensorflow</div>
                                           <div className = "Skill"> <SiAmazonaws className = "Fancy-Border" /> AWS </div>
+                                          <div className = "Skill"> <SiNodedotjs className = "Fancy-Border" /> Node.js </div>
                                           
 
                                    </div>
                                    
                                           <div className = "Row">
-                                          
-                                          <div className = "Skill"> <SiNodedotjs className = "Fancy-Border" /> Node.js </div>
+                                          <div className = "Skill"> <SiArduino className = "Fancy-Border" /> Arduino </div>
+                                          <div className = "Skill"> <SiRaspberrypi className = "Fancy-Border" /> RaspberryPi </div>
                                           <div className = "Skill"> <SiFirebase className = "Fancy-Border" /> Firebase </div>
                                           <div className = "Skill"> <DiSqllite className = "Fancy-Border" /> SQLite</div>
                                           <div className = "Skill"> <SiGit className = "Fancy-Border" /> Git </div>
@@ -152,7 +155,7 @@ export default class App extends React.Component {
                             <div className = "Events"
                                    style = {{ paddingLeft: "3vh", paddingRight: "2vh" }}>
 
-                                   <div className = "Timeline-Header">Past</div>
+                                   <div className = "Timeline-Header">Related Work</div>
 
                                    <a href = "https://github.com/aryan-cs/uno-dos"
                                       target = "_blank"
@@ -193,7 +196,7 @@ export default class App extends React.Component {
 
                                    <Project width = "30vh"
                                             height = "20vh"
-                                            title = "Run For Water 5K Website"
+                                            title = "Run For Water Website"
                                             repo = "https://github.com/aryan-cs/run-for-water-5k"
                                             src = "https://runforwater5k.org"
                                             desc = "A website for the 5K event I helped organize!"/>
